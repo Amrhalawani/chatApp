@@ -29,6 +29,7 @@ import java.util.List;
             }
 
             ImageView photoImageView = (ImageView) convertView.findViewById(R.id.photoImageView);
+            ImageView profileImageView = (ImageView) convertView.findViewById(R.id.photoImageView);
             TextView messageTextView = (TextView) convertView.findViewById(R.id.messageTextView);
             TextView authorTextView = (TextView) convertView.findViewById(R.id.nameTextView);
 

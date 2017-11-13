@@ -10,6 +10,7 @@ public class Data {
         private String text; //lazem fe el data base tkon nafs el "text"
         private String name;
         private String photoUrl;
+        private String profilePhoto;
 
         public Data() {
         }
