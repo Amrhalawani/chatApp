@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         mPhotoPickerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO: Fire an intent to show an image picker
+
                 Intent i = new Intent(Intent.ACTION_GET_CONTENT);
                 i.setType("image/jpeg");
                 i.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         mSendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO: Send messages on click
+                // Send messages on click
                 Data friendlyUploadMessage = new Data(mMessageEditText.getText().toString(), mUsername, null);
                 mMassegesDatabaseRefrances.push().setValue(friendlyUploadMessage); // han7ot el object da fe database
                 // Clear input box
@@ -250,8 +250,8 @@ public class MainActivity extends AppCompatActivity {
                             Uri downloadUrl = taskSnapshot.getDownloadUrl();
 
                             // Set the download URL to the message box, so that the user can send it to the database
-                            Data friendlyMessage = new Data("test", mUsername, downloadUrl.toString());
-                            mMassegesDatabaseRefrances.push().setValue(friendlyMessage);
+                            Data Message = new Data("test", mUsername, downloadUrl.toString());
+                            mMassegesDatabaseRefrances.push().setValue(Message);
                         }
 
                     });}}
