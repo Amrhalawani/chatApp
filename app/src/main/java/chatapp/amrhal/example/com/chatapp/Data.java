@@ -15,7 +15,7 @@ public class Data {
         public Data() {
         }
 
-        public Data(String text, String name, String photoUrl) {
+    public Data(String text, String name, String photoUrl) {
             this.text = text;
             this.name = name;
             this.photoUrl = photoUrl;

@@ -8,7 +8,7 @@ import chatapp.amrhal.example.com.chatapp.oneToOne.oneToOneActivity;
 
 public final class ActivityLauncher {
 
-    public static void openMainActivity(Context context){
+    public static void openMainActivity(Context context) {
         Intent i = new Intent(context, MainActivity.class);
         context.startActivity(i);
     }
