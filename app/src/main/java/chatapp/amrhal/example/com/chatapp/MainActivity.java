@@ -317,7 +317,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()) {
+        switch (item.getItemId()){
             case R.id.sign_out_menu:
                 // mfirebaseAuth.signOut(); //bet3mel sign out bardo
                 AuthUI.getInstance().signOut(this);//signOut
